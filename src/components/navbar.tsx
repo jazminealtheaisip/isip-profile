@@ -26,10 +26,6 @@ const NAV_ITEM: Array<NavItem> = [
     page: "projects",
   },
   {
-    label: "Skills",
-    page: "skills",
-  },
-  {
     label: "Contact",
     page: "contact",
   },

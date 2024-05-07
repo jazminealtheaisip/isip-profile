@@ -8,10 +8,17 @@ export default function Home() {
     >
       <div>
         <div>
-          <h1>Home</h1>
+          <Image src="/Picture1.jpg" alt="" width={300} height={300} />
+          <h1>Jazmine Althea Toledo Isip</h1>
         </div>
         <div>
-          <Image src="/Picture1.jpg" alt="" width={300} height={300} />
+          <h1>Hi! I&apos;m Jazmine Althea Toledo Isip,</h1>
+          <p>
+            an aspiring frontend developer with a passion for creating engaging
+            websites and web applications. I&apos;m dedicated to learning the
+            art of web development and crafting user experiences that leave a
+            lasting impression.
+          </p>
         </div>
       </div>
     </div>

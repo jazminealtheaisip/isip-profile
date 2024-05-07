@@ -1,6 +1,7 @@
 "use client";
 import React from "react";
-import { AiOutlineGithub } from "react-icons/ai";
+import { MdEmail } from "react-icons/md";
+import { FaFacebook, FaGithub } from "react-icons/fa";
 
 const Footer = () => {
   return (
@@ -11,13 +12,36 @@ const Footer = () => {
           © 2024 by Jazmine Althea T. Isip
           <a href="/" className="hover:underline"></a>
         </div>
+
         <div className="flex flex-row items-center justify-center space-x-2 mb-1">
           <a
             href="https://github.com/jazminealtheaisip"
             rel="noreferrer"
             target="_blank"
           >
-            <AiOutlineGithub
+            <FaFacebook
+              className="hover:-translate-y-1 transition-transform cursor-pointer text-neutral-500 dark:text-neutral-100"
+              size={30}
+            />
+          </a>
+
+          <a
+            href="https://github.com/jazminealtheaisip"
+            rel="noreferrer"
+            target="_blank"
+          >
+            <FaGithub
+              className="hover:-translate-y-1 transition-transform cursor-pointer text-neutral-500 dark:text-neutral-100"
+              size={30}
+            />
+          </a>
+
+          <a
+            href="https://github.com/jazminealtheaisip"
+            rel="noreferrer"
+            target="_blank"
+          >
+            <MdEmail
               className="hover:-translate-y-1 transition-transform cursor-pointer text-neutral-500 dark:text-neutral-100"
               size={30}
             />

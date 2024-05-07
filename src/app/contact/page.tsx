@@ -20,7 +20,7 @@ const Contact = () => {
     >
       <div className="">
         <div>
-          <h1 className="text-center font-bold">Contact</h1>
+          <h1 className="text-center font-bold text-2xl">Contact</h1>
         </div>
         <Card className="w-[500px]">
           <CardHeader>
@@ -46,7 +46,11 @@ const Contact = () => {
                 </div>
                 <div className="flex flex-col space-y-1">
                   <Label htmlFor="framework">Message</Label>
-                  <Textarea id="message" placeholder="Message" />
+                  <Textarea
+                    id="message"
+                    placeholder="Message"
+                    className="resize-none"
+                  />
                 </div>
               </div>
             </form>

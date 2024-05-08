@@ -1,7 +1,7 @@
 "use client";
 import React from "react";
 import { useState, useEffect } from "react";
-import { MdMenu } from "react-icons/md";
+import { MdMenu, MdClose } from "react-icons/md";
 /* import { Link } from "react-scroll/modules"; */
 import { usePathname } from "next/navigation";
 import Link from "next/link";
@@ -32,7 +32,7 @@ const NAV_ITEM: Array<NavItem> = [
 ];
 
 const Navbar = () => {
-  const [navbar, setNavbar] = useState(true);
+  const [navbar, setNavbar] = useState(false);
   const pathname = usePathname();
   const [activePage, setActivePage] = useState<string>("/");
 
@@ -43,18 +43,22 @@ const Navbar = () => {
   }, [pathname]);
 
   return (
-    <header className="w-full mx-auto bg-white shadow fixed top-0 z-50 sm:px-20 sm:py-2 ">
+    <header className="w-full mx-auto bg-white shadow z-50 sm:px-20 sm:py-2 ">
       <div className="justify-between md:items-center md:flex">
         <div>
-          <div className="flex items-center justify-between py-1">
+          <div className="flex items-center justify-between ">
             <Link href="/">
-              <div className="md:py-4 md:block">
+              <div className="md:py-1 md:block">
                 <h2 className="text-lg font-bold">Jazmine Althea T. Isip</h2>
               </div>
             </Link>
             <div className="md:hidden" onClick={() => setNavbar(!navbar)}>
               <button>
-                {navbar ? <MdMenu size={30} /> : <MdMenu size={30} />}
+                {navbar ? (
+                  <MdClose size={30} className="text-gray-800" />
+                ) : (
+                  <MdMenu size={30} className="text-gray-800" />
+                )}
               </button>
             </div>
           </div>
@@ -71,17 +75,13 @@ const Navbar = () => {
                   <Link
                     key={idx}
                     href={`/${item.page}`}
-                    className={`block lg:inline-block text-neutral-900 hover:text-neutral-500 dark:text-neutral-100 cursor-pointer ${
+                    className={`block lg:inline-block text-gray-800 hover:text-blue-500 dark:text-gray-100 dark:hover:text-blue-300 cursor-pointer ${
                       activePage === item.page ? "active" : ""
                     }`}
-                    /* activeClass="active"
-                    spy={true}
-                    smooth={true}
-                    offset={-100}
-                    duration={500} */
                     onClick={() => {
                       setNavbar(!navbar);
                       setActivePage(item.page);
+                      console.log("Active Page:", item.page);
                     }}
                   >
                     {item.label}

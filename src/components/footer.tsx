@@ -5,9 +5,8 @@ import { FaFacebook, FaGithub } from "react-icons/fa";
 
 const Footer = () => {
   return (
-    <footer className="bottom-0 left-0 right-0 mx-auto max-w-xl sm:px-6 md:max-w-5xl ">
-      <hr className="w-full h-0.5 mx-auto mt-8 bg-neutral-200 border-0"></hr>
-      <div className="mx-auto  p-4 flex flex-col text-center text-neutral-900 md:flex-row md:justify-between">
+    <footer>
+      <div className=" w-full mx-auto max-w-screen-xl p-4 md:flex md:items-center md:justify-between">
         <div className="flex flex-row items-center justify-center space-x-1 text-neutral-500 dark:text-neutral-100">
           © 2024 by Jazmine Althea T. Isip
           <a href="/" className="hover:underline"></a>

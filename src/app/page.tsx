@@ -4,32 +4,32 @@ import { FaFacebook, FaGithub } from "react-icons/fa";
 
 export default function Home() {
   return (
-    <div
-      id="home"
-      className="flex justify-center items-center h-screen bg-gradient-to-r from-red-300 to-white"
-    >
-      <div className="flex items-center justify-center w-full  ">
-        <div className="bg-white border border-gray-200 shadow-xl md:w-full md:max-w-xl md:h-auto md:flex md:flex-row  ">
-          <div className="w-40 md:w-2/5 flex flex-col items-center justify-center h-3/4">
-            <Image
-              src="/Picture1.jpg"
-              alt=""
-              className="w-full h-full"
-              width={300}
-              height={300}
-            />
-            <h2 className="text-l font-bold my-2">
-              Jazmine Althea Toledo Isip
-            </h2>
+    <section id="home" className="bg-gradient-to-r from-red-300 to-white ">
+      <div className="sm:py-20 md:py-8 md:flex-row md:space-x-4">
+        <div className=" md:pt-10 md:pb-10 flex flex-col md:flex-row items-center justify-center w-full md:w-1/2 mx-auto">
+          <div className="w-full md:w-1/3 shadow-xl drop-shadow-lg">
+            <div className="bg-blue-100 py-8 flex flex-col items-center justify-center h-full ">
+              <div className="relative w-24 h-24 md:w-32 md:h-32 lg:w-48 lg:h-48 rounded-full overflow-hidden">
+                <Image
+                  src="/Picture1.jpg"
+                  alt="Profile Picture"
+                  className="rounded-full"
+                  layout="fill"
+                  objectFit="cover"
+                />
+              </div>
+              <h2 className="text-lg font-bold my-2 text-center">
+                Jazmine Althea Toledo Isip
+              </h2>
+            </div>
 
-            <div className="flex space-x-4 ">
-              <a href="" rel="noreferrer" target="_blank">
+            <div className="bg-white flex justify-around items-center p-3">
+              <a href="#" rel="noreferrer" target="_blank">
                 <FaFacebook
                   className="hover:-translate-y-1 transition-transform cursor-pointer text-neutral-500 dark:text-neutral-100"
                   size={30}
                 />
               </a>
-
               <a
                 href="https://github.com/jazminealtheaisip"
                 rel="noreferrer"
@@ -40,8 +40,7 @@ export default function Home() {
                   size={30}
                 />
               </a>
-
-              <a href="" rel="noreferrer" target="_blank">
+              <a href="#" rel="noreferrer" target="_blank">
                 <MdEmail
                   className="hover:-translate-y-1 transition-transform cursor-pointer text-neutral-500 dark:text-neutral-100"
                   size={30}
@@ -50,19 +49,21 @@ export default function Home() {
             </div>
           </div>
 
-          <div className="p-6 md:w-3/5 h-3/4">
-            <h1 className="text-l font-bold md:text-l text-center md:text-left">
-              Hi! I&apos;m Jazmine Althea Toledo Isip
-            </h1>
-            <p className="text-l mt-4 md:text-xl">
-              I&apos;m an aspiring frontend developer with a passion for
-              creating engaging websites and web applications. I&apos;m
-              dedicated to learning the art of web development and crafting user
-              experiences that leave a lasting impression.
-            </p>
+          <div className="w-full md:w-2/3 p-8  ">
+            <div className="p-6 flex flex-col items-center justify-center h-full">
+              <h1 className="text-lg font-bold mb-4">
+                Hi! I&apos;m Jazmine Althea Toledo Isip
+              </h1>
+              <p className="text-base md:text-lg">
+                I&apos;m an aspiring frontend developer with a passion for
+                creating engaging websites and web applications. I&apos;m
+                dedicated to learning the art of web development and crafting
+                user experiences that leave a lasting impression.
+              </p>
+            </div>
           </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 }

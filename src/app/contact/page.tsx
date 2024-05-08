@@ -16,7 +16,7 @@ const Contact = () => {
   return (
     <div
       id="contact"
-      className="flex justify-center items-center mt-3 md:pt-16 bg-pink-200 h-screen"
+      className="flex justify-center items-center h-screen bg-gradient-to-r from-red-300 to-white"
     >
       <div className="">
         <div>

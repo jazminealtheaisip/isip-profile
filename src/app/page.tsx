@@ -5,7 +5,7 @@ import { FaFacebook, FaGithub } from "react-icons/fa";
 export default function Home() {
   return (
     <section id="home" className="bg-gradient-to-r from-red-300 to-white ">
-      <div className="sm:py-20 md:py-8 md:flex-row md:space-x-4">
+      <div className="sm:py-20 md:py-8 md:flex-row md:space-x-4 min-h-screen">
         <div className=" md:pt-10 md:pb-10 flex flex-col md:flex-row items-center justify-center w-full md:w-1/2 mx-auto">
           <div className="w-full md:w-1/3 shadow-xl drop-shadow-lg">
             <div className="bg-blue-100 py-8 flex flex-col items-center justify-center h-full ">

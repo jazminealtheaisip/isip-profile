@@ -25,37 +25,41 @@ const Contact = () => {
           get back to you as soon as I can.
         </h2>
 
-        <Card className="w-[500px] bg-[--dun]">
-          <CardContent className="mt-5">
-            <form>
-              <div className="grid w-full items-center gap-2">
-                <div className="flex flex-col space-y-1">
-                  <Label htmlFor="name">Name</Label>
-                  <Input id="name" className="text-s" placeholder="Name" />
+        <div className="flex justify-center items-center ">
+          <Card className="w-[500px] bg-[--dun] shadow-lg drop-shadow-lg mt-5">
+            <CardContent className="mt-5">
+              <form>
+                <div className="grid w-full items-center gap-2">
+                  <div className="flex flex-col space-y-1">
+                    <Label htmlFor="name">Name</Label>
+                    <Input id="name" className="text-s" placeholder="Name" />
+                  </div>
+                  <div className="flex flex-col space-y-1">
+                    <Label htmlFor="framework">Email</Label>
+                    <Input id="message" placeholder="Email" />
+                  </div>
+                  <div className="flex flex-col space-y-1">
+                    <Label htmlFor="framework">Subject</Label>
+                    <Input id="message" placeholder="Subject" />
+                  </div>
+                  <div className="flex flex-col space-y-1">
+                    <Label htmlFor="framework">Message</Label>
+                    <Textarea
+                      id="message"
+                      placeholder="Message"
+                      className="resize-none"
+                    />
+                  </div>
                 </div>
-                <div className="flex flex-col space-y-1">
-                  <Label htmlFor="framework">Email</Label>
-                  <Input id="message" placeholder="Email" />
-                </div>
-                <div className="flex flex-col space-y-1">
-                  <Label htmlFor="framework">Subject</Label>
-                  <Input id="message" placeholder="Subject" />
-                </div>
-                <div className="flex flex-col space-y-1">
-                  <Label htmlFor="framework">Message</Label>
-                  <Textarea
-                    id="message"
-                    placeholder="Message"
-                    className="resize-none"
-                  />
-                </div>
-              </div>
-            </form>
-          </CardContent>
-          <CardFooter className="flex justify-end">
-            <Button>Send</Button>
-          </CardFooter>
-        </Card>
+              </form>
+            </CardContent>
+            <CardFooter className="flex justify-end items-center bg-white">
+              <Button className="text-neutral-900 bg-[--khaki] mt-2 ">
+                Send
+              </Button>
+            </CardFooter>
+          </Card>
+        </div>
       </div>
     </div>
   );

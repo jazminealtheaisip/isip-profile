@@ -11,7 +11,7 @@ const poppins = Poppins({
 });
 
 export const metadata: Metadata = {
-  title: "Jazmine T. Isip.",
+  title: "Jazmine Althea",
   description: "Created by Jazmine T. Isip",
 };
 

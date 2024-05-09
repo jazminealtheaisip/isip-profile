@@ -25,6 +25,10 @@ const NAV_ITEM: Array<NavItem> = [
     label: "Projects",
     page: "projects",
   },
+  {
+    label: "Contact",
+    page: "contact",
+  },
 ];
 
 const Navbar = () => {
@@ -45,7 +49,7 @@ const Navbar = () => {
           <div className="flex items-center justify-between ">
             <Link href="/">
               <div className="md:py-1 md:block">
-                <h2 className="text-lg font-bold">Jazmine Althea T. Isip</h2>
+                <h2 className="text-lg font-bold">Jazmine Althea</h2>
               </div>
             </Link>
             <div className="md:hidden" onClick={() => setNavbar(!navbar)}>

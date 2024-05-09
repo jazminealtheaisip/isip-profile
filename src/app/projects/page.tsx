@@ -8,10 +8,10 @@ const projects = [
   {
     name: "Riddle Quiz Game",
     description:
-      "Riddle Quiz Game is build with React Native. Riddle Quiz Game offers three modes: English, Tagalog, and Hangman. The objective of the game is to correctly solve riddles presented and choose the correct option. Accumulate points by solving riddles correctly and aim to achieve a high score. Compete with other players and aim to top the leaderboards in both English and Tagalog modes.",
-    image: "/sample1.jpg",
+      "Riddle Quiz Game is build with React Native. Riddle Quiz Game offers three modes: English, Tagalog, and Hangman. The objective of the game is to correctly solve riddles presented and choose the correct option. Accumulate points by solving riddles correctly and aim to achieve a high score. Compete with other players and aim to top the leaderboards in both English and Tagalog modes. Click the button below to download the game.",
+    image: "/RQG.png",
 
-    link: "",
+    link: "https://expo.dev/artifacts/eas/fWNYPmX1LeWfCfWQjPWaDJ.apk",
   },
   {
     name: "Gcwento",
@@ -46,7 +46,7 @@ const Projects = () => {
         {projects.map((project, idx) => {
           return (
             <div key={idx}>
-              <div className="flex flex-col md:flex-row md:space-x-12 justify-center items-center bg-[--khaki] p-3 shadow-xl drop-shadow-lg">
+              <div className="flex flex-col md:flex-row md:space-x-12 justify-center items-center bg-[--dun] p-3 shadow-xl drop-shadow-lg">
                 <div className="md:w-[50%]">
                   <Image
                     src={project.image}

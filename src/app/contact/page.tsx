@@ -14,22 +14,19 @@ import { Textarea } from "@/components/ui/textarea";
 
 const Contact = () => {
   return (
-    <div
-      id="contact"
-      className="flex justify-center items-center h-screen bg-gradient-to-r from-red-300 to-white"
-    >
-      <div className="">
-        <div>
-          <h1 className="text-center font-bold text-2xl">Contact</h1>
-        </div>
-        <Card className="w-[500px]">
-          <CardHeader>
-            <CardDescription className=" text-center">
-              Feel free to contact me by filling out the form below, and
-              I&apos;ll get back to you as soon as I can.
-            </CardDescription>
-          </CardHeader>
-          <CardContent>
+    <div id="contact" className="text-[--textcolor]">
+      <div className=" md:pt-16 min-h-screen">
+        <h1 className="text-center font-bold text-4xl">
+          Contact
+          <hr className="w-20 h-1 mx-auto my-4 bg-[--khaki] border-0 rounded"></hr>
+        </h1>
+        <h2 className="text-center font-normal text-lg">
+          Feel free to contact me by filling out the form below, and I&apos;ll
+          get back to you as soon as I can.
+        </h2>
+
+        <Card className="w-[500px] bg-[--dun]">
+          <CardContent className="mt-5">
             <form>
               <div className="grid w-full items-center gap-2">
                 <div className="flex flex-col space-y-1">

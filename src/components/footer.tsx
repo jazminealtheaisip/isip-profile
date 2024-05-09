@@ -5,9 +5,9 @@ import { FaFacebook, FaGithub } from "react-icons/fa";
 
 const Footer = () => {
   return (
-    <footer>
-      <div className=" w-full mx-auto max-w-screen-xl p-4 md:flex md:items-center md:justify-between">
-        <div className="flex flex-row items-center justify-center space-x-1 text-neutral-500 dark:text-neutral-100">
+    <footer className="bg-[--oldlace] ">
+      <div className=" w-full mx-auto max-w-screen-xl p-4 md:flex md:items-center md:justify-between ">
+        <div className="flex flex-row items-center justify-center space-x-1 text-neutral-700 dark:text-neutral-100">
           © 2024 by Jazmine Althea T. Isip
           <a href="/" className="hover:underline"></a>
         </div>
@@ -15,7 +15,7 @@ const Footer = () => {
         <div className="flex flex-row items-center justify-center space-x-2 mb-1">
           <a href="" rel="noreferrer" target="_blank">
             <FaFacebook
-              className="hover:-translate-y-1 transition-transform cursor-pointer text-neutral-500 dark:text-neutral-100"
+              className="hover:-translate-y-1 transition-transform cursor-pointer text-neutral-700 dark:text-neutral-100"
               size={30}
             />
           </a>
@@ -26,14 +26,14 @@ const Footer = () => {
             target="_blank"
           >
             <FaGithub
-              className="hover:-translate-y-1 transition-transform cursor-pointer text-neutral-500 dark:text-neutral-100"
+              className="hover:-translate-y-1 transition-transform cursor-pointer text-neutral-700 dark:text-neutral-100"
               size={30}
             />
           </a>
 
           <a href="" rel="noreferrer" target="_blank">
             <MdEmail
-              className="hover:-translate-y-1 transition-transform cursor-pointer text-neutral-500 dark:text-neutral-100"
+              className="hover:-translate-y-1 transition-transform cursor-pointer text-neutral-700 dark:text-neutral-100"
               size={30}
             />
           </a>

@@ -25,10 +25,6 @@ const NAV_ITEM: Array<NavItem> = [
     label: "Projects",
     page: "projects",
   },
-  {
-    label: "Contact",
-    page: "contact",
-  },
 ];
 
 const Navbar = () => {
@@ -43,7 +39,7 @@ const Navbar = () => {
   }, [pathname]);
 
   return (
-    <header className="w-full mx-auto bg-white shadow z-50 sm:px-20 sm:py-2 ">
+    <header className="w-full mx-auto bg-[--oldlace] shadow z-50 sm:px-20 sm:py-2 ">
       <div className="justify-between md:items-center md:flex">
         <div>
           <div className="flex items-center justify-between ">
@@ -75,7 +71,7 @@ const Navbar = () => {
                   <Link
                     key={idx}
                     href={`/${item.page}`}
-                    className={`block lg:inline-block text-gray-800 hover:text-blue-500 dark:text-gray-100 dark:hover:text-blue-300 cursor-pointer ${
+                    className={`block lg:inline-block text-gray-800 hover:text-[--khaki] dark:text-gray-100 dark:hover:text-blue-300 cursor-pointer ${
                       activePage === item.page ? "active" : ""
                     }`}
                     onClick={() => {

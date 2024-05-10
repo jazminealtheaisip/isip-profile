@@ -13,7 +13,11 @@ const Footer = () => {
         </div>
 
         <div className="flex flex-row items-center justify-center space-x-2 mb-1">
-          <a href="" rel="noreferrer" target="_blank">
+          <a
+            href="https://www.facebook.com/jazminealthea.isip?mibextid=ZbWKwL"
+            rel="noreferrer"
+            target="_blank"
+          >
             <FaFacebook
               className="hover:-translate-y-1 transition-transform cursor-pointer text-neutral-700 dark:text-neutral-100"
               size={30}
@@ -31,7 +35,11 @@ const Footer = () => {
             />
           </a>
 
-          <a href="" rel="noreferrer" target="_blank">
+          <a
+            href="https://mail.google.com/mail/u/?authuser=user@gmail.com"
+            rel="noreferrer"
+            target="_blank"
+          >
             <MdEmail
               className="hover:-translate-y-1 transition-transform cursor-pointer text-neutral-700 dark:text-neutral-100"
               size={30}

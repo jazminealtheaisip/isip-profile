@@ -29,7 +29,7 @@ const skills = [
 const About = () => {
   return (
     <section id="about" className=" text-[--text-color]">
-      <div className=" md:pt-16  min-h-screen">
+      <div className=" md:pt-10  min-h-screen">
         <h1 className="text-center font-bold text-4xl">
           About Me
           <hr className="w-20 h-1 mx-auto my-4 bg-[--khaki] border-0 rounded"></hr>
@@ -39,18 +39,23 @@ const About = () => {
           have
         </h2>
 
-        <div className="flex flex-col space-y-10 items-stretch justify-center mt-10 md:space-x-10 md:space-y-0 md:p-4 md:flex-row md:text-left">
-          <div className="md:w-1/2 bg-[--dun] h-[100%] p-6 rounded-lg shadow-xl drop-shadow-lg">
+        <div className="flex flex-col space-y-10 items-stretch justify-center mt-10 md:space-y-10 md:p-4 md:flex-col md:text-left">
+          <div className=" bg-[--dun] h-[100%] p-8 rounded-lg shadow-xl drop-shadow-lg">
             <h1 className="text-center text-2xl font-bold mb-6 md:text-center">
               Get to know me!
             </h1>
             <p>
               Hello, my name is Jazmine Althea T. Isip and I&apos;m{" "}
-              <span className="font-bold">{"very motivated"}</span> and
-              <span className="font-bold">{" ambitious."}</span> I have lots of
-              hobbies and interests that keep me busy. I enjoy reading, playing
-              mobile games, and cooking. I&apos;m always looking for new
-              experiences and love learning new things.
+              <span className="font-bold text-[--textname]">
+                {"very motivated"}
+              </span>{" "}
+              and
+              <span className="font-bold text-[--textname]">
+                {" ambitious."}
+              </span>{" "}
+              I have lots of hobbies and interests that keep me busy. I enjoy
+              reading, playing mobile games, and cooking. I&apos;m always
+              looking for new experiences and love learning new things.
             </p>
 
             <br />
@@ -80,7 +85,7 @@ const About = () => {
             <br />
             <p>
               I believe it&apos;s important to{" "}
-              <span className="font-bold text-blue-500">
+              <span className="font-bold text-[--textname]">
                 keep learning and growing.
               </span>{" "}
               I love technology and want to see how far I can go with it.
@@ -89,10 +94,10 @@ const About = () => {
             </p>
           </div>
 
-          <div className="text-center md:w-1/2 md:text-left ">
-            <div className="bg-[--dun] h-[30%] rounded-lg shadow-xl drop-shadow-lg flex flex-col justify-center items-center">
-              <h1 className="text-xl font-bold mb-6 text-center ">My Skills</h1>
-              <div className="flex flex-wrap flex-row justify-center z-10 md:justify-center">
+          <div className="text-center  md:text-left ">
+            <div className="bg-[--dun] rounded-lg shadow-xl drop-shadow-lg flex flex-col justify-center items-center">
+              <h1 className="text-xl font-bold mt-6 text-center ">Skills</h1>
+              <div className="flex flex-wrap flex-row justify-center z-10 md:justify-center p-5">
                 {skills.map((item, idx) => {
                   return (
                     <div key={idx}>
@@ -111,30 +116,6 @@ const About = () => {
                 })}
               </div>
             </div>
-
-            {/* <Carousel className="w-full max-w-sm ">
-              <CarouselContent>
-                {Array.from({ length: 3 }).map((_, index) => (
-                  <CarouselItem key={index}>
-                    <div className="p-1 ">
-                      <Card className="bg-black p-0 m-0">
-                        <CardContent>
-                          <Image
-                            src={`/sample${index + 1}.jpg`}
-                            className="object-cover h-full w-full"
-                            alt={`Image ${index + 1}`}
-                            width={300}
-                            height={300}
-                          />
-                        </CardContent>
-                      </Card>
-                    </div>
-                  </CarouselItem>
-                ))}
-              </CarouselContent>
-              <CarouselPrevious className="z-10 -left-6 md:-left-8" />
-              <CarouselNext className="z-10 -right-6 md:-right-8" />
-            </Carousel> */}
           </div>
         </div>
       </div>

@@ -49,7 +49,9 @@ const Navbar = () => {
           <div className="flex items-center justify-between ">
             <Link href="/">
               <div className="md:py-1 md:block">
-                <h2 className="text-lg font-bold">Jazmine Althea</h2>
+                <h2 className="text-lg font-bold text-[--textname]">
+                  Jazmine Althea
+                </h2>
               </div>
             </Link>
             <div className="md:hidden" onClick={() => setNavbar(!navbar)}>
@@ -75,7 +77,7 @@ const Navbar = () => {
                   <Link
                     key={idx}
                     href={`/${item.page}`}
-                    className={`block lg:inline-block text-gray-800 hover:text-[--khaki] dark:text-gray-100 dark:hover:text-blue-300 cursor-pointer ${
+                    className={`block lg:inline-block text-gray-800 hover:text-[--khaki] dark:text-gray-100 dark:hover:text-blue-300 cursor-pointer  ${
                       activePage === item.page ? "active" : ""
                     }`}
                     onClick={() => {

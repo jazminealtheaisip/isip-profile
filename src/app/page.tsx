@@ -13,7 +13,7 @@ export default function Home() {
             <div className="bg-[--dun] p-9 flex flex-col items-center justify-center h-full ">
               <div className="relative w-24 h-24 md:w-32 md:h-32 lg:w-48 lg:h-48 rounded-full overflow-hidden ">
                 <Image
-                  src="/Picture1.jpg"
+                  src="/thea.jpg"
                   alt="Profile Picture"
                   className="rounded-full"
                   layout="fill"
@@ -30,7 +30,11 @@ export default function Home() {
             </div>
 
             <div className="bg-white flex justify-around items-center p-3">
-              <a href="#" rel="noreferrer" target="_blank">
+              <a
+                href="https://www.facebook.com/jazminealthea.isip?mibextid=ZbWKwL"
+                rel="noreferrer"
+                target="_blank"
+              >
                 <FaFacebook
                   className="hover:-translate-y-1 transition-transform cursor-pointer text-neutral-500 dark:text-neutral-100"
                   size={30}
@@ -46,7 +50,11 @@ export default function Home() {
                   size={30}
                 />
               </a>
-              <a href="#" rel="noreferrer" target="_blank">
+              <a
+                href="https://mail.google.com/mail/u/?authuser=user@gmail.com"
+                rel="noreferrer"
+                target="_blank"
+              >
                 <MdEmail
                   className="hover:-translate-y-1 transition-transform cursor-pointer text-neutral-500 dark:text-neutral-100"
                   size={30}
@@ -57,10 +65,10 @@ export default function Home() {
 
           <div className="w-full md:w-2/3 p-8  ">
             <div className="p-6 flex flex-col  h-full">
-              <h1 className="text-[60px] font-bold mb-4 text-[--text-color]">
+              <h1 className="text-[40px] font-bold mb-4 text-[--text-color]">
                 Hi!
               </h1>
-              <h1 className="text-[20px] md:text-[50px] font-bold mb-4 text-[--text-color]">
+              <h1 className="text-[20px] md:text-[40px] font-bold mb-4 text-[--text-color]">
                 I&apos;m{" "}
                 <span className="text-[--textname]">Jazmine Althea</span> Toledo
                 Isip.
